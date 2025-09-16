@@ -3,14 +3,14 @@ import Logo from '../../assets/Logo.png'
 
 const navbarlinks = [
   { id: 1, title: 'Inicio' , link: '/' },
-  { id:2, title: 'Nosotros' , link: '#' },
-  { id: 3, title: 'Contacto' , link: '#' },
-  { id: 4, title: 'Soporte' , link: '#' }
+  { id:2, title: 'Proyectos' , link: '#' },
+  { id: 3, title: 'Sobre mí' , link: '#' },
+  { id: 4, title: 'Contacto' , link: '#' }
 ]
 
 const navBarRedes = [
-  { id: 1, title: 'Linkedin' , link: '#', icon: 'bi bi-linkedin'},
-  { id:2, title: 'Github' , link: '#', icon: 'bi bi-github' },
+  { id: 1, title: 'Linkedin' , link: 'https://www.linkedin.com/in/heryan-angulo-guzman-381494112/', icon: 'bi bi-linkedin'},
+  { id:2, title: 'Github' , link: 'https://github.com/heryandejesus', icon: 'bi bi-github' },
 ]
 
 const Navbar = () => {
