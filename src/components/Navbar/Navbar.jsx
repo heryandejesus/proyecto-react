@@ -9,15 +9,15 @@ const navbarlinks = [
 ]
 
 const navBarRedes = [
-  { id: 1, title: 'Instagram' , link: '#', icon: 'bi bi-instagram'},
-  { id:2, title: 'X' , link: '#', icon: 'bi bi-twitter-x' },
+  { id: 1, title: 'Linkedin' , link: '#', icon: 'bi bi-linkedin'},
+  { id:2, title: 'Github' , link: '#', icon: 'bi bi-github' },
 ]
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-[#5800aa]">
+    <nav className="fixed top-0 left-0 bg-purple-900/30 w-full backdrop-blur-md z-50 ">
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
         {/* Logo Navbar */}
         <div>
