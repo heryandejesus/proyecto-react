@@ -1,0 +1,105 @@
+import React, { useState } from 'react'
+import Logo from '../../assets/Logo.png'
+
+const navbarlinks = [
+  { id: 1, title: 'Inicio' , link: '/' },
+  { id:2, title: 'Nosotros' , link: '#' },
+  { id: 3, title: 'Contacto' , link: '#' },
+  { id: 4, title: 'Soporte' , link: '#' }
+]
+
+const navBarRedes = [
+  { id: 1, title: 'Instagram' , link: '#', icon: 'bi bi-instagram'},
+  { id:2, title: 'X' , link: '#', icon: 'bi bi-twitter-x' },
+]
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <nav className="bg-[#5800aa]">
+      <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
+        {/* Logo Navbar */}
+        <div>
+          <img src={Logo} alt="Logo del sitio" className="w-[100px]" />
+        </div>
+
+        {/* Botón menú hamburguesa (solo en mobile) */}
+        <button 
+          className="sm:hidden text-white text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <i className="bi bi-x"></i> : <i className="bi bi-list"></i>}
+        </button>
+
+        {/* Navegación desktop */}
+        <div className="hidden sm:block">
+          <ul className='flex sm:space-x-8 space-x-4'>
+            {navbarlinks.map((link) => (
+              <li key={link.id}>
+                <a 
+                  className='text-white sm:text-lg text-sm hover:text-sky-200 transition-transform hover:scale-110 transform inline-block duration-300' 
+                  href={link.link}
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Redes desktop */}
+        <div className="hidden sm:block">
+          <ul className='flex space-x-4'>
+            {navBarRedes.map((link) => (
+              <li key={link.id}>
+                <a 
+                  target='_blank' 
+                  rel='noopener noreferrer' 
+                  className='inline-block transition-transform duration-300 transform hover:scale-125' 
+                  href={link.link}
+                >
+                  <i className={`${link.icon} sm:text-2xl text-lg text-white hover:text-sky-200 transition-all duration-300`}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Menú mobile desplegable */}
+      {isOpen && (
+        <div className="sm:hidden px-4 pb-4">
+          <ul className='flex flex-col space-y-3'>
+            {navbarlinks.map((link) => (
+              <li key={link.id}>
+                <a 
+                  className='block text-white text-lg hover:text-sky-200 transition-all duration-300' 
+                  href={link.link}
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ul className="flex space-x-4 mt-4">
+            {navBarRedes.map((link) => (
+              <li key={link.id}>
+                <a 
+                  target='_blank' 
+                  rel='noopener noreferrer' 
+                  className='inline-block transition-transform duration-300 transform hover:scale-125' 
+                  href={link.link}
+                >
+                  <i className={`${link.icon} text-2xl text-white hover:text-sky-200 transition-all duration-300`}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
+  )
+}
+
+export default Navbar
