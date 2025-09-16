@@ -7,4 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/proyecto-react/', // <- aquí va el nombre exacto de tu repo
 })
