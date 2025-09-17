@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
         {/* Logo Navbar */}
         <div>
-          <img src={Logo} alt="Logo del sitio" className="w-[100px]" />
+          <img src={Logo} alt="Logo del sitio" className="w-[130px]" />
         </div>
 
         {/* Botón menú hamburguesa (solo en mobile) */}
