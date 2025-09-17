@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Projects from "./components/Proyectos/Projects";
 import Fondo from "./assets/Fondo.png"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <div style={bgImage} className="overflow-hidden min-h-screen">
       <Navbar />
       <Hero />
+      <Projects/>
     </div>
   )
 }
