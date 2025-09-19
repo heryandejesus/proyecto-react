@@ -16,6 +16,11 @@ const navBarRedes = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  // Función para cerrar el menú
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   return (
     <nav className="fixed top-0 left-0 bg-purple-900/30 w-full backdrop-blur-md z-50 ">
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
@@ -68,36 +73,40 @@ const Navbar = () => {
       </div>
 
       {/* Menú mobile desplegable */}
-      {isOpen && (
-        <div className="sm:hidden px-4 pb-4">
-          <ul className='flex flex-col space-y-3'>
-            {navbarlinks.map((link) => (
-              <li key={link.id}>
-                <a 
-                  className='block text-white text-lg hover:text-sky-200 transition-all duration-300' 
-                  href={link.link}
-                >
-                  {link.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ul className="flex space-x-4 mt-4">
-            {navBarRedes.map((link) => (
-              <li key={link.id}>
-                <a 
-                  target='_blank' 
-                  rel='noopener noreferrer' 
-                  className='inline-block transition-transform duration-300 transform hover:scale-125' 
-                  href={link.link}
-                >
-                  <i className={`${link.icon} text-2xl text-white hover:text-sky-200 transition-all duration-300`}></i>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+<div className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+  isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+}`}>
+  <div className="px-4 pb-4">
+    <ul className='flex flex-col space-y-3'>
+      {navbarlinks.map((link) => (
+        <li key={link.id}>
+          <a 
+            className='block text-white text-lg hover:text-sky-200 transition-all duration-300' 
+            href={link.link}
+            onClick={closeMenu}
+          >
+            {link.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <ul className="flex space-x-4 mt-4">
+      {navBarRedes.map((link) => (
+        <li key={link.id}>
+          <a 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='inline-block transition-transform duration-300 transform hover:scale-125' 
+            href={link.link}
+            onClick={closeMenu}
+          >
+            <i className={`${link.icon} text-2xl text-white hover:text-sky-200 transition-all duration-300`}></i>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
     </nav>
   )
 }
