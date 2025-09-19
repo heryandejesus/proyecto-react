@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo.png'
 const navbarlinks = [
   { id: 1, title: 'Inicio' , link: '#' },
   { id:2, title: 'Proyectos' , link: '#projects' },
-  { id: 3, title: 'Sobre mí' , link: '#' },
+  { id: 3, title: 'Sobre mí' , link: '#about' },
   { id: 4, title: 'Contacto' , link: '#' }
 ]
 

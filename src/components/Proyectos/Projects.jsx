@@ -47,7 +47,7 @@ const Projects = () => {
                     rel="noopener noreferrer" 
                     className="bg-purple-600 hover:bg-purple-800 px-4 py-3 rounded-3xl transition-all duration-300"
                   >
-                    Código
+                    Código <i className="bi bi-code mr-2"></i>
                   </a>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Proyectos/Projects";
 import Fondo from "./assets/Fondo.png"
+import SobreMi from "./components/SobreMi/SobreMi";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <Projects/>
+      <SobreMi/>
     </div>
   )
 }
