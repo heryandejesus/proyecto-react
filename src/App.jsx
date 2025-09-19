@@ -3,6 +3,8 @@ import Hero from "./components/Hero/Hero";
 import Projects from "./components/Proyectos/Projects";
 import Fondo from "./assets/Fondo.png"
 import SobreMi from "./components/SobreMi/SobreMi";
+import Contacto from "./components/Contacto/Contacto";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
       <Hero />
       <Projects/>
       <SobreMi/>
+      <Contacto/>
+      <Footer/>
     </div>
   )
 }

@@ -5,7 +5,7 @@ const navbarlinks = [
   { id: 1, title: 'Inicio' , link: '#' },
   { id:2, title: 'Proyectos' , link: '#projects' },
   { id: 3, title: 'Sobre mí' , link: '#about' },
-  { id: 4, title: 'Contacto' , link: '#' }
+  { id: 4, title: 'Contacto' , link: '#contact' }
 ]
 
 const navBarRedes = [
@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 bg-purple-900/30 w-full backdrop-blur-md z-50 ">
+    <nav className="fixed top-0 left-0 bg-purple-900/20 w-full backdrop-blur-md z-50 ">
       <div className='flex justify-between items-center sm:px-12 sm:py-6 px-4 py-3'>
         {/* Logo Navbar */}
         <div>
