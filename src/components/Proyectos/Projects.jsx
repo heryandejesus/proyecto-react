@@ -1,22 +1,42 @@
 import React from "react"
+import fondoLanding from "../../assets/landing-page.jpg"
+import fondoLanding2 from "../../assets/landing-page-estatica.jpg"
+import formularioDeContacto from "../../assets/formulario-de-contacto.jpg"
+import proyectoReact from "../../assets/proyecto-react.jpg"
 
 const projects = [
   {
     id: 1,
-    title: "Proyecto React",
-    description: "Aplicación web creada con React y Tailwind CSS.",
-    img: "https://via.placeholder.com/400x200", // aquí pones tu imagen
-    demo: "https://tusitio.com",
-    code: "https://github.com/heryandejesus/proyecto-react"
+    title: "Landig Page",
+    description: "Página web responsiva creada con HTML, CSS y JavaScript para un negocio de servicios de Micropigmentación Capilar.",
+    img: fondoLanding, 
+    demo: "https://heryandejesus.github.io/proyectorafa/",
+    code: "https://github.com/heryandejesus/proyectorafa"
   },
   {
     id: 2,
     title: "Landing Page",
-    description: "Landing page responsive con HTML, CSS y JavaScript.",
-    img: "https://via.placeholder.com/400x200",
-    demo: "https://tusitio.com",
-    code: "https://github.com/heryandejesus/landing-page"
+    description: "Landing page responsive con HTML y CSS. Entrega de Proyecto Final del Bootcamp de Desarrollo Web de Coderhouse",
+    img: fondoLanding2,
+    demo: "https://heryandejesus.github.io/53800/",
+    code: "https://github.com/heryandejesus/53800"
   },
+  {
+    id: 3,
+    title: "Formulario de Contacto",
+    description: "Formulario de contacto responsive con HTML y CSS",
+    img: formularioDeContacto,
+    demo: "https://heryandejesus.github.io/formulario-de-contacto/",
+    code: "https://github.com/heryandejesus/formulario-de-contacto"
+  },
+    {
+    id: 4,
+    title: "Mi Portfolio con React",
+    description: "Mi portfolio personal desarrollado con React y Tailwind CSS",
+    img: proyectoReact,
+    demo: "https://heryandejesus.github.io/proyecto-react/",
+    code: "https://github.com/heryandejesus/proyecto-react"
+  }
 ]
 
 const Projects = () => {

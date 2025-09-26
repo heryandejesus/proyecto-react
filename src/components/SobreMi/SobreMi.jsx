@@ -1,5 +1,6 @@
 import React from "react";
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiBootstrap, SiGit } from "react-icons/si";
+import Heryan from '../../assets/Heryan.jpeg';
 
 const SobreMi = () => {
   const tecnologias = [
@@ -20,7 +21,7 @@ const SobreMi = () => {
       {/* Imagen o avatar */}
       <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-purple-600 shadow-lg">
         <img
-          src="https://via.placeholder.com/300"
+          src={Heryan}
           alt="Foto de Heryan"
           className="w-full h-full object-cover"
         />
