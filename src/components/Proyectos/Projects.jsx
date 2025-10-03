@@ -3,6 +3,7 @@ import fondoLanding from "../../assets/landing-page.jpg"
 import fondoLanding2 from "../../assets/landing-page-estatica.jpg"
 import formularioDeContacto from "../../assets/formulario-de-contacto.jpg"
 import proyectoReact from "../../assets/proyecto-react.jpg"
+import sistemaSolar from "../../assets/sistema-solar.jpg"
 
 const projects = [
   {
@@ -36,6 +37,14 @@ const projects = [
     img: proyectoReact,
     demo: "https://heryandejesus.github.io/proyecto-react/",
     code: "https://github.com/heryandejesus/proyecto-react"
+  },
+  {
+    id: 5,
+    title: "Sistema Solar",
+    description: "Aplicación creada con React que muestra breve información sobre los planetas del sistema solar y tu peso en cada planeta",
+    img: sistemaSolar,
+    demo: "https://heryandejesus.github.io/sistema-solar/",
+    code: "https://github.com/heryandejesus/sistema-solar"
   }
 ]
 
