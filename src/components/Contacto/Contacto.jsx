@@ -1,23 +1,33 @@
 import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import { texts } from "../../i18n/texts";
 
 const Contacto = () => {
+  const { lang } = useLanguage();
+  const t = texts[lang];
+
   return (
     <section
       id="contact"
       className="text-white min-h-screen flex flex-col justify-center items-center px-6 py-16 text-center"
     >
-      <h2 className="text-4xl sm:text-5xl font-bold mb-6">Contacto</h2>
+      {/* Título */}
+      <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+        {t.contactTitle}
+      </h2>
+
+      {/* Descripción */}
       <p className="max-w-xl text-lg sm:text-xl mb-8">
-        ¿Quieres trabajar conmigo o tienes alguna idea? 🚀  
-        Escríbeme y conversemos.
+        {t.contactSubtitle}
       </p>
 
-      {/* Botón de email */}
+      {/* Botón email */}
       <a
         href="mailto:heryandejesus@gmail.com"
         className="bg-purple-600 hover:bg-purple-800 border border-white px-8 py-3 rounded-3xl transition-all duration-300 text-lg"
       >
-        <i className="bi bi-envelope mr-2"></i>Envíame un correo
+        <i className="bi bi-envelope mr-2"></i>
+        {t.contactButton}
       </a>
 
       {/* Redes sociales */}
@@ -30,6 +40,7 @@ const Contacto = () => {
         >
           <i className="bi bi-envelope"></i>
         </a>
+
         <a
           href="https://www.linkedin.com/in/heryan-angulo-guzman-381494112/"
           target="_blank"
@@ -38,6 +49,7 @@ const Contacto = () => {
         >
           <i className="bi bi-linkedin"></i>
         </a>
+
         <a
           href="https://github.com/heryandejesus"
           target="_blank"
@@ -47,9 +59,13 @@ const Contacto = () => {
           <i className="bi bi-github"></i>
         </a>
       </div>
-        <p className="pt-5">
-            <a href="mailto:heryandejesus@gmail.com">heryandejesus@gmailcom</a>
-        </p>
+
+      {/* Email visible abajo */}
+      <p className="pt-5">
+        <a href="mailto:heryandejesus@gmail.com">
+          heryandejesus@gmail.com
+        </a>
+      </p>
     </section>
   );
 };

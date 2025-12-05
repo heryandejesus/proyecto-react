@@ -1,8 +1,21 @@
 import React from "react";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiBootstrap, SiGit } from "react-icons/si";
-import Heryan from '../../assets/Heryan.jpeg';
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiBootstrap,
+  SiGit,
+} from "react-icons/si";
+import Heryan from "../../assets/Heryan.jpeg";
+import { useLanguage } from "../../context/LanguageContext";
+import { texts } from "../../i18n/texts";
 
 const SobreMi = () => {
+  const { lang } = useLanguage();
+  const t = texts[lang];
+
   const tecnologias = [
     { nombre: "HTML", icon: <SiHtml5 className="text-orange-500 w-6 h-6" /> },
     { nombre: "CSS", icon: <SiCss3 className="text-blue-500 w-6 h-6" /> },
@@ -15,10 +28,9 @@ const SobreMi = () => {
 
   return (
     <section
-      id="about" 
+      id="about"
       className="text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10"
     >
-      {/* Imagen o avatar */}
       <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-purple-600 shadow-lg">
         <img
           src={Heryan}
@@ -27,16 +39,15 @@ const SobreMi = () => {
         />
       </div>
 
-      {/* Texto */}
       <div className="max-w-xl text-center md:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">Sobre mí</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          {t.aboutTitle}
+        </h2>
+
         <p className="text-lg leading-relaxed mb-4">
-            Soy Heryan, un desarrollador frontend apasionado por crear proyectos
-            creativos y funcionales. Me encanta aprender nuevas tecnologías y dar
-            vida a las ideas con código.
+          {t.aboutDescription}
         </p>
 
-        {/* Tecnologías con iconos */}
         <div className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start">
           {tecnologias.map((tech, index) => (
             <div
@@ -53,7 +64,7 @@ const SobreMi = () => {
           download="CV-Heryan-Guzman.pdf"
           className="bg-purple-600 hover:bg-purple-800 px-6 py-3 rounded-3xl border border-white transition-all duration-300"
         >
-          Descargar CV
+          {t.downloadCv}
         </a>
       </div>
     </section>
