@@ -26,11 +26,19 @@ const SobreMi = () => {
     { nombre: "Git", icon: <SiGit className="text-red-500 w-6 h-6" /> },
   ];
 
+  
+  const cvFile =
+    lang === "es" ? "cvheryanguzman.pdf" : "cvheryanenglish.pdf";
+
+  const cvDownloadName =
+    lang === "es" ? "CV-Heryan-Guzman-ES.pdf" : "CV-Heryan-Guzman-EN.pdf";
+
   return (
     <section
       id="about"
       className="text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10"
     >
+      {/* Imagen o avatar */}
       <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-purple-600 shadow-lg">
         <img
           src={Heryan}
@@ -39,6 +47,7 @@ const SobreMi = () => {
         />
       </div>
 
+      {/* Texto */}
       <div className="max-w-xl text-center md:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
           {t.aboutTitle}
@@ -48,6 +57,7 @@ const SobreMi = () => {
           {t.aboutDescription}
         </p>
 
+        {/* Tecnologías con iconos */}
         <div className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start">
           {tecnologias.map((tech, index) => (
             <div
@@ -59,9 +69,10 @@ const SobreMi = () => {
           ))}
         </div>
 
+        {/* Botón CV dependiente del idioma */}
         <a
-          href={`${import.meta.env.BASE_URL}cvheryanguzman.pdf`}
-          download="CV-Heryan-Guzman.pdf"
+          href={`${import.meta.env.BASE_URL}${cvFile}`}
+          download={cvDownloadName}
           className="bg-purple-600 hover:bg-purple-800 px-6 py-3 rounded-3xl border border-white transition-all duration-300"
         >
           {t.downloadCv}
