@@ -49,7 +49,8 @@ const SobreMi = () => {
         </div>
 
         <a
-          href="#"
+          href="public/cvheryanguzman.pdf"
+          download="CV-Heryan-Guzman.pdf"
           className="bg-purple-600 hover:bg-purple-800 px-6 py-3 rounded-3xl border border-white transition-all duration-300"
         >
           Descargar CV
