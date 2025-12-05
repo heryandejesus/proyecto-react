@@ -8,7 +8,7 @@ const navBarRedes = [
   {
     id: 1,
     title: "Linkedin",
-    link: "https://www.linkedin.com/in/heryan-angulo-guzman-381494112/",
+    link: "https://www.linkedin.com/in/heryan-angulo-guzman",
     icon: "bi bi-linkedin",
   },
   {
