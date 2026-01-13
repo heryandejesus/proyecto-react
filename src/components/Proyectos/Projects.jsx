@@ -4,6 +4,7 @@ import fondoLanding2 from "../../assets/landing-page-estatica.jpg"
 import formularioDeContacto from "../../assets/formulario-de-contacto.jpg"
 import proyectoReact from "../../assets/proyecto-react.jpg"
 import sistemaSolar from "../../assets/sistema-solar.jpg"
+import rickAndMorty from "../../assets/rick-morty.png"
 
 import { useLanguage } from "../../context/LanguageContext"
 import { texts } from "../../i18n/texts"
@@ -53,6 +54,14 @@ const Projects = () => {
       code: "https://github.com/heryandejesus/sistema-solar",
       title: t.projectsList[4].title,
       description: t.projectsList[4].description
+    },
+    {
+      id: 6,
+      img: rickAndMorty,
+      demo: "https://rick-morty-app-heryan.netlify.app/",
+      code: "https://github.com/heryandejesus/rick-morty-app.git",
+      title: t.projectsList[5].title,
+      description: t.projectsList[5].description
     }
   ]
 

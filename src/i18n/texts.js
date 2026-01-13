@@ -33,6 +33,10 @@ export const texts = {
   {
     title: "Sistema Solar",
     description: "Aplicación creada con React que muestra breve información sobre los planetas del sistema solar y tu peso en cada planeta"
+  },
+  {
+    title: "Rick and Morty API",
+    description: "Aplicación creada con React que consume la API de Rick and Morty para mostrar información sobre los personajes de la serie"
   }
 ],
 
@@ -81,6 +85,10 @@ export const texts = {
   {
     title: "Solar System",
     description: "Application built with React showing planet information and your weight on each planet."
+  },
+  {
+    title: "Rick and Morty API",
+    description: "Application built with React that consumes the Rick and Morty API to display information about the series' characters."
   }
 ],
 
