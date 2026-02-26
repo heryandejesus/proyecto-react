@@ -5,6 +5,7 @@ import formularioDeContacto from "../../assets/formulario-de-contacto.jpg"
 import proyectoReact from "../../assets/proyecto-react.jpg"
 import sistemaSolar from "../../assets/sistema-solar.jpg"
 import rickAndMorty from "../../assets/rick-morty.png"
+import dentistWebSite from "../../assets/dentistwebsite.webp"
 
 import { useLanguage } from "../../context/LanguageContext"
 import { texts } from "../../i18n/texts"
@@ -62,6 +63,14 @@ const Projects = () => {
       code: "https://github.com/heryandejesus/rick-morty-app.git",
       title: t.projectsList[5].title,
       description: t.projectsList[5].description
+    },
+    {
+      id: 7,
+      img: dentistWebSite,
+      demo: "https://www.od-dianablanco.com.ar/",
+      code: "https://github.com/heryandejesus/odontologa-diana.git",
+      title: t.projectsList[6].title,
+      description: t.projectsList[6].description
     }
   ]
 

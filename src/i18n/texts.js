@@ -37,6 +37,10 @@ export const texts = {
   {
     title: "Rick and Morty API",
     description: "Aplicación creada con React que consume la API de Rick and Morty para mostrar información sobre los personajes de la serie"
+  },
+  {
+    title: "Odóntologa Diana Blanco",
+    description: "Sitio web responsive creado con HTML, CSS y JavaScript para una clínica dental."
   }
 ],
 
@@ -89,6 +93,10 @@ export const texts = {
   {
     title: "Rick and Morty API",
     description: "Application built with React that consumes the Rick and Morty API to display information about the series' characters."
+  },
+  {
+    title: "Diana Blanco Dentist",
+    description: "Responsive website built with HTML, CSS and JavaScript for a dental clinic."
   }
 ],
 
