@@ -39,7 +39,7 @@ export const texts = {
     description: "Aplicación creada con React que consume la API de Rick and Morty para mostrar información sobre los personajes de la serie"
   },
   {
-    title: "Odóntologa Diana Blanco",
+    title: "Odontóloga Diana Blanco",
     description: "Sitio web responsive creado con HTML, CSS y JavaScript para una clínica dental."
   }
 ],
