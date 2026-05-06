@@ -41,6 +41,10 @@ export const texts = {
   {
     title: "Odontóloga Diana Blanco",
     description: "Sitio web responsive creado con HTML, CSS y JavaScript para una clínica dental."
+  },
+  {
+    title: "Sistema de Ticketing Digital — Flow Dos Mil Party",
+    description: "Plataforma completa de venta de entradas para eventos desarrollada con Next.js, Supabase y MercadoPago. Incluye checkout seguro con anti-fraude, generación automática de QR únicos por entrada, envío de tickets por email, sistema de tiers con cupos limitados, validador de QR para el staff y panel de administración."
   }
 ],
 
@@ -97,6 +101,10 @@ export const texts = {
   {
     title: "Diana Blanco Dentist",
     description: "Responsive website built with HTML, CSS and JavaScript for a dental clinic."
+  },
+  {
+    title: "Flow Dos Mil Party Ticketing System",
+    description: "Complete ticketing platform for events developed with Next.js, Supabase and MercadoPago. Features secure checkout with anti-fraud measures, automatic generation of unique QR codes per ticket, email delivery of tickets, tiered system with limited availability, QR validator for staff, and an admin panel."
   }
 ],
 

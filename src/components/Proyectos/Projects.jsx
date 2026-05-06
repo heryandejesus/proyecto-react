@@ -6,6 +6,7 @@ import proyectoReact from "../../assets/proyecto-react.jpg"
 import sistemaSolar from "../../assets/sistema-solar.jpg"
 import rickAndMorty from "../../assets/rick-morty.png"
 import dentistWebSite from "../../assets/dentistwebsite.webp"
+import flowDosMilParty from "../../assets/flowdosmilparty.webp"
 
 import { useLanguage } from "../../context/LanguageContext"
 import { texts } from "../../i18n/texts"
@@ -71,6 +72,13 @@ const Projects = () => {
       code: "https://github.com/heryandejesus/odontologa-diana.git",
       title: t.projectsList[6].title,
       description: t.projectsList[6].description
+    },
+    {
+      id: 8,
+      img: flowDosMilParty,
+      demo: "https://www.flowdosmilparty.com.ar/",
+      title: t.projectsList[7].title,
+      description: t.projectsList[7].description
     }
   ]
 
